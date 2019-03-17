@@ -1,0 +1,12 @@
+@import './reset.scss';
+@import './icons.scss';
+@import './variables.scss';
+
+
+html, body {
+   background: $full-base;
+   font-size: 16px;
+}
+#root {
+   font-size: 0.875em;
+}

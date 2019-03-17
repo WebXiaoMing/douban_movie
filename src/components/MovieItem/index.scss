@@ -1,0 +1,50 @@
+@import '../../sass/variables.scss';
+
+.movie-item {
+   .movie-content {
+      padding: $h-spacing-lg;
+      display: flex;
+      height: 120px;
+      .movie-image {
+         height: 100%;
+         margin-right: 10px;
+      }
+      .movie-info {
+         flex: 1;
+         font-size: $font-size-caption-sm;
+         .info-name {
+            font-size: $font-size-caption;
+            .year-text {
+               font-size: $font-size-base;
+               color: $color-text-caption;
+            }
+         }
+         .star-content {
+            height: 26px;
+            display: flex;
+            align-items: center;
+            .icon-star, .icon-star-half {
+               height: 100%;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               color: $color-text-disabled;
+            }
+            .icon-star::before, .icon-star-half::before {
+               font-size: $font-size-caption-sm;
+            }
+            .icon-star.solid, .icon-star-half {
+               color: $brand-primary-tap;
+            }
+            span {
+               margin-left: 4px;
+            }
+         }
+         .genres-text {
+            line-height: 20px;
+            color: $color-text-disabled;
+            text-align: justify;
+         }
+      }
+   }
+}

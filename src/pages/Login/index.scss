@@ -1,0 +1,43 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+$class-prefix: "login";
+
+.#{$class-prefix} {
+   @include fullscreen;
+   &-header {
+      height: 44px;
+      background: $brand-primary;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: $color-text-base-inverse;
+      .close {
+         padding: 0 10px;
+         font-size: 12px;
+      }
+      .login-text {
+         position: absolute;
+         width: 70%;
+         text-align: center;
+         left: 15%;
+         font-size: 1.25em;
+      }
+   }
+   &-form {
+      .icon-user, .icon-password {
+         color: $brand-primary;
+      }
+      .am-input-control {
+         font-size: 14px;
+      }
+   }
+   &-btn {
+      flex: 1;
+      margin: 0 0.5em;
+      &.theme {
+         background: $brand-primary;
+         color: $color-text-base-inverse;
+      }
+   }
+}
