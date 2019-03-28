@@ -1,0 +1,12 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.view {
+   @include fullscreen;
+   .view-content {
+      padding-bottom: $tab-bar-height;
+      .content {
+         min-height: 100%;
+      }
+   }
+}

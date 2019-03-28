@@ -1,6 +1,7 @@
 @import './reset.scss';
 @import './icons.scss';
 @import './variables.scss';
+@import './mixins.scss';
 
 
 html, body {
@@ -9,4 +10,7 @@ html, body {
 }
 #root {
    font-size: 0.875em;
+}
+#app {
+   @include fullscreen;
 }

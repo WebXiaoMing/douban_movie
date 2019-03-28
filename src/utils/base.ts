@@ -81,7 +81,8 @@ export const updateMovieList = (oldData:ListProps, newData:ResponseProps, refres
       items = refresh ? newMovies : oldData.items.concat(newMovies),
       hasMore = items.length < newData.total,
       start = refresh ? (0 + newMovies.length) : (oldData.start + newData.subjects.length),
-      method = oldData.method
+      method = oldData.method,
+      count = oldData.count
 
-   return { items, hasMore, invalidateTime, start, method }
+   return { items, hasMore, invalidateTime, start, method, count }
 }

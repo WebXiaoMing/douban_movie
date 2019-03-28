@@ -1,22 +1,13 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/variables.scss';
 
-.hot {
-   @include fullscreen;
-   .hot-header {
-      height: $tab-bar-height;
-      display: flex;
-      align-items: center;
-      padding: 0 $h-spacing-lg;
-      .header-title {
-         font-size: $font-size-heading;
-         flex: 1;
-      }
-   }
-   .hot-content {
-      padding-bottom: $tab-bar-height;
-      .content {
-         min-height: 100%;
-      }
+.hot-header {
+   height: $tab-bar-height;
+   display: flex;
+   align-items: center;
+   padding: 0 $h-spacing-lg;
+   .header-title {
+      font-size: $font-size-heading;
+      flex: 1;
    }
 }

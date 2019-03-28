@@ -1,0 +1,5 @@
+@import '../../sass/mixins';
+
+.category {
+   @include fullscreen
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import {BrowserRouter, Redirect, Route} from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 import store from './store'
@@ -13,7 +13,8 @@ class App extends Component {
 			<div>
 				<Provider store={store}>
 					<BrowserRouter>
-						<div style={{width: '100vw', height: '100vh'}}>
+						<div id="app">
+							<Route exact path="/" render={() => <Redirect to="/hot"/>}/>
 							{
 								routes.map(route => <Route {...route} />)
 							}

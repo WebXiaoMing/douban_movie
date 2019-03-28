@@ -8,8 +8,17 @@ const defaultState:DefaultStateProps = {
       invalidateTime: 0,
       items: [],
       start: 0,
+      count: 20,
       hasMore: true,
       method: createRequestInstance('get', '/api/v2/movie/in_theaters')
+   },
+   rank: {
+      invalidateTime: 0,
+      items: [],
+      start: 0,
+      count: 20,
+      hasMore: true,
+      method: createRequestInstance('get', '/api/v2/movie/top250')
    }
 }
 
@@ -22,7 +31,6 @@ const reducer = (state=defaultState, action:ActionProps) => {
       default:
          return state
    }
-
 }
 
 export default reducer

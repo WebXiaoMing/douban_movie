@@ -1,0 +1,7 @@
+@import '../../sass/variables';
+.rank-header {
+   height: $tab-bar-height;
+   line-height: $tab-bar-height;
+   padding: 0 $h-spacing-lg;
+   font-size: $font-size-heading;
+}

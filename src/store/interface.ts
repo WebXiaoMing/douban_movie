@@ -4,8 +4,9 @@ export type Field = 'hot'
 // 缓存对象数据
 export interface ListProps {
    invalidateTime: number     // 过期时间
-   items: Array<any>          // 数据列表
+   items: any          // 数据列表
    start: number              // 从start开始请求数据
+   count: number
    hasMore: boolean           // 是否还有更多
    method: any                // 请求方法
 }
@@ -13,6 +14,7 @@ export interface ListProps {
 //  初始State
 export interface DefaultStateProps {
    hot: ListProps
+   rank: ListProps
 }
 
 // Action的

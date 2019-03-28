@@ -10,7 +10,8 @@ export interface RouteProps {
    path: string
    key: string
    exec?: boolean
-   component: ComponentClass
+   component?: ComponentClass
+   render?: () => any
 }
 
 
